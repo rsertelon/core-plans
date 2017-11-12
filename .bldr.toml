@@ -1034,6 +1034,8 @@ plan_path = "omniORB"
 plan_path = "opa"
 [opam]
 plan_path = "opam"
+[opencv]
+plan_path = "opencv"
 [openjpeg]
 plan_path = "openjpeg"
 [openldap]
