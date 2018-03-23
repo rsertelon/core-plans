@@ -908,6 +908,8 @@ plan_path = "ocamlbuild"
 plan_path = "omniORB"
 [opam]
 plan_path = "opam"
+[opendkim]
+plan_path = "opendkim"
 [openjpeg]
 plan_path = "openjpeg"
 [openldap]
