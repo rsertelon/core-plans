@@ -1,3 +1,5 @@
+[glib-networking]
+plan_path = "glib-networking"
 [7zip]
 plan_path = "7zip"
 [acbuild]
