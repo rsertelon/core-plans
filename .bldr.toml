@@ -735,6 +735,8 @@ plan_path = "libjpeg-turbo"
 plan_path = "libksba"
 [libmaxminddb]
 plan_path = "libmaxminddb"
+[libmemcached]
+plan_path = "libmemcached"
 [libmpc]
 plan_path = "libmpc"
 [libnl]
