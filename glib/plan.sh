@@ -43,8 +43,12 @@ pkg_interpreters=(core/coreutils)
 
 do_prepare() {
   if [[ ! -r /usr/bin/file ]]; then
-    ln -sv "$(pkg_path_for file)/bin/file" /usr/bin/file
+    ln -sv "$(pkg_path_for "core/file")/bin/file" /usr/bin/file
     _clean_file=true
+  fi
+  if [[ ! -r /usr/bin/env ]]; then
+    ln -sv "$(pkg_path_for "core/coreutils")/bin/env" /usr/bin/env
+    _clean_env=true
   fi
 }
 
@@ -64,5 +68,8 @@ do_after() {
 do_end() {
   if [[ -n "$_clean_file" ]]; then
     rm -fv /usr/bin/file
+  fi
+  if [[ -n "$_clean_env" ]]; then
+    rm -fv /usr/bin/env
   fi
 }
